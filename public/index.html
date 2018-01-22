@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO</title>
+    <link href="assets/font/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/lib/jQuery/jquery-ui.css"> -->
+</head>
+
+<body>
+
+    <div class="landing__page">
+        <div id="nextToContent">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+        </div>
+    </div>
+
+    <div class="wrapper fade-in is-paused" id="mainContent">
+        <header class="header__desktop">
+            <section class="header__content">
+                <div class="header__logo">
+                    <img src="assets/img/logo_neo.png">
+                </div>
+                <div class="header flex">
+                    <div class="main__menu">
+                        <div class="burger__menu">
+                            <div class="menu__bar"></div>
+                            <div class="menu__bar"></div>
+                            <div class="menu__bar"></div>
+                        </div>
+                        <nav class="main__nav">
+                            <div class="nav__parent">
+                                <div class="searchbox" onClick="onClick(event)">
+                                    <input type="text" onFocus="onFocus()" onBlur="onBlur()" placeholder="search" />
+                                    <button>
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Community</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <br><br>
+                                    <li>
+                                        <a href="#">Learning Solution</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Success Story</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!-- desktop header and nav menu -->
+
+        <main class="main">
+            <aside class="main__sidebar" id="sidebar">
+                <ul>
+                    <li>
+                        <a href="#content-1">do</a>
+                    </li>
+                    <li>
+                        <a href="#content-2">use</a>
+                    </li>
+                    <li>
+                        <a href="#content-3">need</a>
+                    </li>
+                    <li>
+                        <a href="#content-4">now</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <div class="main__content">
+                <section id="content-1" class="each__content">In</section>
+                <section id="content-2" class="each__content">New York</section>
+                <section id="content-3" class="each__content">I</section>
+                <section id="content-4" class="each__content">Millie Rock</section>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- <script src="assets/lib/jQuery/jquery-2.2.3.min.js"></script> -->
+    <script src="assets/js/jquery12.min.js"></script>
+    <!-- <script src="assets/lib/jQuery/jquery-ui.min.js"></script> -->
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // click next from welcome page
+        $('#nextToContent').click(function() {
+            $('.landing__page').addClass('slide-up');
+            $('.landing__page').hide(800);
+            $('.wrapper').removeClass('is-paused');
+        });
+
+        // to hide scroll bar
+        var parent = document.getElementsByClassName('main__content');
+        var child = document.getElementsByClassName('each__content');
+        child.style.paddingRight = child.offsetWidth - child.clientWidth + "px";
+    </script>
+ 
+</body>
+
+</html>

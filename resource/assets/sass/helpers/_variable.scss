@@ -1,0 +1,82 @@
+$primary : #46578A; // primary color
+$secondary : #49C5FE;// secondary color
+$tertiary: #3F4E7B; // solid blue dark color
+$yellow: #F7F052; //solid yellow text color
+$lineColorForm : #636C83; // line color at box login form
+$lineColorBox : #5367A4;
+$colors: (
+    'primary': (
+        'light': tint($primary, 20%),
+        'normal': $primary,
+        'dark': shade($primary, 20%),
+    ),
+    'secondary': (
+        'light': tint($secondary, 20%),
+        'normal': $secondary,
+        'dark': shade($secondary, 10%)
+    ),
+    'gray': (
+        'ultralight': #eeeeee,
+        'light': #cccccc,
+        'normal': #9B9B9B,
+        'dark': #666666,
+        'ultradark': #444444
+    ),
+    'other': (
+        'white': #ffffff,
+        'black': #4A4A4A,
+        'success': #26B2A1,
+        'warn': #F1A94E,
+        'alert': #EF737B
+    )
+);
+
+// Primary
+$primary-light: map-get(map-get($colors, 'primary'), 'light');
+$primary-dark: map-get(map-get($colors, 'primary'), 'dark');
+$primary-dense: map-get(map-get($colors, 'primary'), 'dense');
+
+// Secondary
+$secondary-light: map-get(map-get($colors, 'secondary'), 'light');
+$secondary-dark: map-get(map-get($colors, 'secondary'), 'dark');
+
+// Grays
+$gray-ultralight: map-get(map-get($colors, 'gray'), 'ultralight');
+$gray-light: map-get(map-get($colors, 'gray'), 'light');
+$gray: map-get(map-get($colors, 'gray'), 'normal');
+$gray-dark: map-get(map-get($colors, 'gray'), 'dark');
+$gray-ultradark: map-get(map-get($colors, 'gray'), 'ultradark');
+
+// Misc
+$white: map-get(map-get($colors, 'other'), 'white');
+$black: map-get(map-get($colors, 'other'), 'black');
+$success: map-get(map-get($colors, 'other'), 'success');
+$warn: map-get(map-get($colors, 'other'), 'warn');
+$alert: map-get(map-get($colors, 'other'), 'alert');
+
+
+
+
+
+
+
+// Layout/Grid
+// ------------------------
+$min-width: 20rem;
+$max-width: 87.5rem;
+
+$num-columns: 12;
+$grid-width: $max-width;
+$grid-gutter: 1rem;
+$grid-container-prefix: 'row';
+$grid-item-prefix: 'col';
+
+
+
+// Misc
+// ------------------------
+$chevron-left: "&#x3008;";
+$chevron-right: "&#x3009;";
+$close: "&#x2715;";
+$quote-left: "\201c";
+$quote-right: "\201d";

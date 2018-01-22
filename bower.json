@@ -1,0 +1,12 @@
+{
+  "name": "LivePortal",
+  "description": "Front-end thing",
+  "version": "0.1.0",
+  "authors": "faizal ditya maulana<dityafaizal99@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "jquery": "~2.2.3",
+    "bulma": "~0.4.1"
+  }
+}

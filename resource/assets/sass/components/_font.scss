@@ -1,0 +1,134 @@
+@font-face {
+    font-family: neoFontRegular;
+    src: url('/assets/font/Cera GR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: neoFontBold;
+    src: url('/assets/font/Cera GR Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: neoFontThin;
+    src: url('/assets/font/Cera GR Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: neoFontMedium;
+    src: url('/assets/font/Cera GR Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Variables start
+// ------------------------
+$font-body: 16px!default;
+// regular font
+$primary-font: 'neoFontRegular', sans-serif;
+$secondary-font: 'neoFontThin', $primary-font;
+$font: $secondary;
+$title-font: 'neoFontMedium', sans-serif;
+// bold font
+$bold: 'neoFontBold', sans-serif;
+// Enable debugging features
+$debug: false;
+
+.white {
+    color: $white;
+    font-family: $primary-font;
+}
+
+.white-bold {
+    color: $white;
+    font-family: $bold;
+}
+
+.blue {
+    color: $secondary;
+    font-family: $title-font;
+}
+
+.blue-bold {
+    color: $secondary;
+    font-family: $bold;
+}
+
+.yellow-bold {
+    color: $yellow;
+    font-family: $bold;
+}
+
+.yellow-thin {
+    color: $yellow;
+    font-family: $secondary-font;
+}
+
+.yellow-regular {
+    color: $yellow;
+    font-family: $primary-font;
+}
+
+// START FOR PAGE USE
+// 
+// 
+.title {
+    @extend .blue;
+    font-size: $font-body*3;
+
+    @include bp(max, 500px) {
+        font-size: $font-body*2;
+    }
+
+}
+
+.body-text {
+    @extend .white;
+    font-size: $font-body;
+}
+
+.body-text-large {
+    @extend .white;
+    font-size: $font-body*1.25;
+}
+
+.money-text {
+    @extend .yellow-bold;
+    font-size: $font-body*4;
+}
+
+.money-text-regular {
+    @extend .yellow-bold;
+    font-size: $font-body*1.5;
+}
+
+.money-text-thin {
+    @extend .yellow-thin;
+    font-size: $font-body;
+}
+
+.blue-text {
+    @extend .blue;
+    font-size: $font-body*1.5;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.blue-text-small {
+    @extend .blue;
+    font-size: $font-body;
+}
+
+// link text color hover function
+a {
+    @include hoverer(color, $white, $secondary);
+}
+
+.text-center {
+    text-align: center;
+}

@@ -1,0 +1,385 @@
+/* NEO PRIMARY COLOR VARIABLES */
+
+$primary: #3F4E7B;
+// primary color
+$secondary: #49C5FE;
+// secondary color
+$lineColorForm: #5367A4;
+// line color at box login
+$white: #fff;
+$lightBlue: #49C5FE;
+// light blue
+$yellow: #F7F052;
+// yellow
+$red: #a53853;
+// red
+$green: #4fe564;
+// green
+$orange: #ffc966;
+
+//orange
+
+// All variables to include font CERA 
+
+@font-face {
+	font-family: neoFontRegular;
+	src: url('../font/Cera GR.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: neoFontBold;
+	src: url('../font/Cera GR Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: neoFontThin;
+	src: url('../font/Cera GR Thin.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// BASE TYPOGRAPHY START
+
+
+$bodyFont: 'neoFontRegular', sans-serif;
+$bodyFontThin: 'neoFontThin', sans-serif;
+$headlineFont: 'neoFontBold', sans-serif;
+$bodySize: 16px;
+
+* {
+	font-family: $bodyFont;
+}
+
+// CSS RESET
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: $bodyFont;
+	vertical-align: baseline;
+	text-decoration: none;
+	color: #8b8b8b;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+ol,
+ul {
+	text-decoration: none;
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+
+// CSS RESET END
+//
+
+// background color
+.bg-primary {
+	background: $primary;
+}
+
+.bg-secondary {
+	background: $secondary;
+}
+
+.bg-lightBlue {
+	background: $lightBlue;
+}
+
+.bg-yellow {
+	background: $yellow;
+}
+
+.bg-red {
+	background: $red !important;
+}
+
+.bg-green {
+	background: $green;
+}
+
+.bg-white {
+	background: $white;
+}
+
+.bg-red-gradient {
+	background: linear-gradient(-180deg, #F5515F 0%, #9F041B 100%);
+}
+
+.bg-green-gradient {
+	background: linear-gradient(-136deg, #F7F052 0%, #51EE3D 92%);
+}
+
+.bg-blue-gradient {
+	background: linear-gradient(-137deg, #4C61FC 0%, #49C5FE 60%);
+}
+
+.bg-white-gradient {
+	background: linear-gradient(-137deg, #bcc2d3 0%, #fafafa 60%);
+}
+
+.success__notif {
+	background-color: #26b2a1;
+}
+
+.danger__notif {
+	background-color: $red;
+}
+
+.warning__notif {
+	background: $orange;
+}
+
+// end background color
+
+// text and font stuff
+.text--center {
+	text-align: center;
+}
+
+.textcl--primary {
+	color: $primary;
+}
+
+.textcl--secondary {
+	color: $secondary;
+}
+
+.font--small {
+	font-size: 12px;
+}
+
+.font--medium {
+	font-size: 14px;
+}
+
+.font--xlarge {
+	font-size: 24px;
+}
+
+// text and font stuff end
+
+// padding stuff
+.padding-tb-20 {
+	padding: 20px 0;
+}
+
+.padding-tb-10 {
+	padding: 10px 0;
+}
+
+.padding-tb-40 {
+	padding: 40px 0;
+}
+
+// padding stuff end
+
+// margin stuff
+.margin--auto {
+	margin: auto;
+}
+
+.margin-b-25 {
+	margin: 0 0 25px;
+}
+
+// margin stuff end
+
+// flex stuff
+.flex {
+	display: flex!important;
+}
+
+.flex--center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex--spacearound {
+	display: flex;
+	justify-content: space-around;
+}
+
+.flex--spacebetween {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex__column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex__column--c {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.flex__direction--col {
+	flex-direction: column;
+}
+
+// flex stuff end
+
+//no select text
+.no-select {
+	user-select: none;
+}
+
+//no select text end
+
+.title {
+	@extend .text--center;
+	font-family: $bodyFont;
+	font-size: $bodySize * 2;
+
+	@include bp (max, 480px) {
+		font-size: $bodySize * 1.5;
+	}
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	appearance: none;
+	margin: 0;
+}
+
+//TOOLTIP
+g.tooltip {
+	pointer-events: none;
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+g.tooltip rect {
+	fill: yellow;
+}
+
+path:hover + g.tooltip {
+	opacity: 1;
+}
