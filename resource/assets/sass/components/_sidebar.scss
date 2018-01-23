@@ -8,6 +8,7 @@
     position: fixed;
     width: 18em;
 
+
 	ul {
 		display: flex;
 	    flex-direction: column;
@@ -51,7 +52,7 @@
 	border: 0;
 	color: rgba(139, 139, 139, 0.35);
 	display: block;
-	font-size: 0.8em;
+	font-size: 0.6em;
 	font-weight: bold;
 	letter-spacing: 0.25em;
 	line-height: 1.75;
@@ -59,7 +60,8 @@
 	padding: 1.35em 0;
 	position: relative;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 #sidebar a.active {
-	color: $secondary;
+	color: #8b8b8b;
 }

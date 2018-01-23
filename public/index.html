@@ -11,13 +11,13 @@
 </head>
 
 <body>
-
     <div class="landing__page">
         <div id="nextToContent">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+            </svg>
         </div>
     </div>
-
     <div class="wrapper fade-in is-paused" id="mainContent">
         <header class="header__desktop">
             <section class="header__content">
@@ -52,7 +52,8 @@
                                     <li>
                                         <a href="#">About</a>
                                     </li>
-                                    <br><br>
+                                    <br>
+                                    <br>
                                     <li>
                                         <a href="#">Learning Solution</a>
                                     </li>
@@ -67,7 +68,6 @@
             </section>
         </header>
         <!-- desktop header and nav menu -->
-
         <main class="main">
             <aside class="main__sidebar" id="sidebar">
                 <ul>
@@ -85,17 +85,68 @@
                     </li>
                 </ul>
             </aside>
-
             <div class="main__content">
-                <section id="content-1" class="each__content">In</section>
+                <section id="content-1" class="each__content">
+                    <div class="inner">
+                        <h1 class="tittle-h1 min-margin">What we Do?</h1>
+                        <p class="body-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has </p>
+                        <div class="bxvideo">
+                            <!--  <a id="stop" href="#">Stop</a> -->
+                            <div class="invideo">
+                                <div class="video-wrapper">
+                                    <div class="video-player">
+                                        <div class="video-trigger" id="video-trigger" style="background-image: url(https://img.youtube.com/vi/ym9AlYGTfE0/maxresdefault.jpg)">
+                                            <a id="play-video" href="#">
+                                                <div class="text">
+                                                    <p class="big"><span class="play"><i class="fa fa-play-circle"></i></span> </p>
+                                                    <!-- <h2>Deixe o amor entrar</h2> -->
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="video-inner">
+                                            <iframe id="video" class="video" width="521" height="293" src="https://www.youtube.com/embed/ym9AlYGTfE0?rel=0" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="videotitle">
+                                    <h3>Video Title</h3>
+                                    <p class="sub-tittle">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. dummy text ever since the 1500s, when an unknown pri
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="invideo">
+                                <div class="video-wrapper">
+                                    <div class="video-player">
+                                        <div class="video-trigger2" id="video-trigger" style="background-image: url(https://img.youtube.com/vi/ym9AlYGTfE0/maxresdefault.jpg)">
+                                            <a id="play-video" href="#">
+                                                <div class="text">
+                                                    <p class="big"><span class="play"><i class="fa fa-play-circle"></i></span> </p>
+                                                    <!--  <h2>Neo Nexgen</h2> -->
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="video-inner">
+                                            <iframe id="video" class="video2" width="521" height="293" src="https://www.youtube.com/embed/ym9AlYGTfE0?rel=0" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="videotitle">
+                                    <h3>Video Title</h3>
+                                    <p class="sub-tittle">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. dummy text ever since the 1500s, when an unknown pri
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section id="content-2" class="each__content">New York</section>
                 <section id="content-3" class="each__content">I</section>
                 <section id="content-4" class="each__content">Millie Rock</section>
             </div>
-
         </main>
     </div>
-
     <!-- <script src="assets/lib/jQuery/jquery-2.2.3.min.js"></script> -->
     <script src="assets/js/jquery12.min.js"></script>
     <!-- <script src="assets/lib/jQuery/jquery-ui.min.js"></script> -->
@@ -104,8 +155,39 @@
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-
     <script>
+    $(document).ready(function() {
+
+
+
+        //JS FOR TRIGER YOUTUBE
+
+        $(".video-trigger, .video-trigger2").click(function() {
+            $(this).addClass("removed");
+
+        });
+
+        $('.video-trigger').on('click', function(e) {
+            $(".video").addClass("watch");
+            $(".video")[0].src += "&autoplay=1";
+            $(".video-trigger2").removeClass("removed");
+            $(".video2").removeClass("watch");
+            $(".video2").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
+
+            event.preventDefault();
+        });
+
+        $('.video-trigger2').on('click', function(e) {
+            $(".video2").addClass("watch");
+            $(".video2")[0].src += "&autoplay=1";
+            $(".video-trigger").removeClass("removed");
+            $(".video").removeClass("watch");
+            $(".video").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
+
+            event.preventDefault();
+        });
+
+
         // click next from welcome page
         $('#nextToContent').click(function() {
             $('.landing__page').addClass('slide-up');
@@ -117,8 +199,9 @@
         var parent = document.getElementsByClassName('main__content');
         var child = document.getElementsByClassName('each__content');
         child.style.paddingRight = child.offsetWidth - child.clientWidth + "px";
+
+    });
     </script>
- 
 </body>
 
 </html>
