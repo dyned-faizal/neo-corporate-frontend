@@ -746,8 +746,7 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0;
-  overflow-x: hidden; }
+  padding: 0; }
 
 body {
   background: url("../img/bgsStarLagrge.png");
@@ -1010,13 +1009,11 @@ footer span {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding: 10px;
-  overflow: hidden; }
+  padding: 10px; }
 
 .each__content {
   width: 100%;
-  min-height: -webkit-calc(100vh - 150px);
-  min-height: calc(100vh - 150px);
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1027,7 +1024,6 @@ footer span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: auto;
   padding-right: 0px; }
   .each__content:nth-child(even) {
     background-color: #ddd; }
@@ -1083,18 +1079,17 @@ footer span {
   border: 0;
   color: rgba(139, 139, 139, 0.35);
   display: block;
-  font-size: 0.6em;
+  font-size: 0.8em;
   font-weight: bold;
   letter-spacing: 0.25em;
   line-height: 1.75;
   outline: 0;
   padding: 1.35em 0;
   position: relative;
-  text-decoration: none;
-  text-transform: uppercase; }
+  text-decoration: none; }
 
 #sidebar a.active {
-  color: #8b8b8b; }
+  color: #49C5FE; }
 
 /* ============================ HEADER ========================================== */
 header {

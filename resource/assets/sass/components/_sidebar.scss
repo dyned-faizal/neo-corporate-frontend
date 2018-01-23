@@ -51,7 +51,7 @@
 	border: 0;
 	color: rgba(139, 139, 139, 0.35);
 	display: block;
-	font-size: 0.6em;
+	font-size: 0.8em;
 	font-weight: bold;
 	letter-spacing: 0.25em;
 	line-height: 1.75;
@@ -59,8 +59,7 @@
 	padding: 1.35em 0;
 	position: relative;
 	text-decoration: none;
-	text-transform: uppercase;
 }
 #sidebar a.active {
-	color: #8b8b8b;
+	color: $secondary;
 }
