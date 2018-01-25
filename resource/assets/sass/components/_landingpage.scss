@@ -6,9 +6,37 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	// background-image: url("../img/dottedmap.png");
+	// background-repeat: no-repeat;
+	// background-position: center;
+	position: relative;
 
 	div {
 		padding: 0 0 70px 0;
+	}
+
+	.landingpage__background {
+		padding: 0;
+	    // position: absolute;
+	    // top: 155px;
+	    // left: 285px;
+
+	    img {
+	    	position: absolute;
+			margin: auto;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+
+			@include bp (max, 768px) {
+				width: 100%;
+			}
+	    }
+
+	    div {
+	    	padding: 0 0 40px 0;
+	    }
 	}
 
 }

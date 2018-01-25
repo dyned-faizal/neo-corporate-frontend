@@ -1,14 +1,17 @@
 .main__sidebar {
-	background-color: $white;
-    cursor: default;
+    width: 18em;
+	background-color: transparent;
     height: 100vh;
     left: 0;
     overflow-x: hidden;
     overflow-y: auto;
     position: fixed;
-    width: 18em;
+    cursor: default;
+    display: flex;
+    justify-content: center;
 
 	ul {
+		width: 25%;
 		display: flex;
 	    flex-direction: column;
 	    justify-content: center;
@@ -18,6 +21,7 @@
 }
 
 .main__sidebar ul li {
+	width: 100%;
 	padding: 5px;
 	font-size: 1em;
 	font-weight: 300;
@@ -25,6 +29,7 @@
 	transition: all 0.25s ease-in-out;
 	display: flex;
 	align-items: center;
+	text-align: left;
 
 	svg {
 		position: relative;
@@ -51,12 +56,12 @@
 	border: 0;
 	color: rgba(139, 139, 139, 0.35);
 	display: block;
-	font-size: 0.8em;
+	font-size: 1em;
 	font-weight: bold;
 	letter-spacing: 0.25em;
 	line-height: 1.75;
 	outline: 0;
-	padding: 1.35em 0;
+	padding: .35em 0;
 	position: relative;
 	text-decoration: none;
 }
