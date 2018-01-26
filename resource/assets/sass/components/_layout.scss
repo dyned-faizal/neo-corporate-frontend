@@ -6,7 +6,7 @@ body {
 	padding: 0;
 	// overflow-x: hidden;
 	-moz-osx-font-smoothing: grayscale;
-   -webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -142,20 +142,22 @@ a:hover {
 /****** mobile menu ******/
 .main__sidebar + .main__content {
 	margin-left: 18em;
-	margin-top: 100px;
+	margin-top: 130px;
 
 	//RESPONSIVE FOR TABLET
-    @include bp (max, 768px) {
-       margin-left: 0;
-       margin-top: 75px;
-    }
+	@include bp (max, 768px) {
+		margin-left: 0;
+		margin-top: 75px;
+	}
+
 }
 
-.main__sidebar{
+.main__sidebar {
 	//RESPONSIVE FOR TABLET
-    @include bp (max, 768px) {
-       display:none;
-    }
+	@include bp (max, 768px) {
+		display: none;
+	}
+
 }
 
 /* burger menu button */
