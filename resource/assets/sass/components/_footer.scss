@@ -25,15 +25,18 @@ footer {
 			color: $secondary;
 			cursor: pointer;
 		}
+
 	}
+
 }
 
 .socmed__contact {
 	width: 50%;
 	display: flex;
 	justify-content: space-between;
-    align-items: flex-end;
-    flex-direction: column;
+	align-items: flex-end;
+	flex-direction: column;
+	background-color: $primary;
 
 	ul {
 		width: 20%;
@@ -50,5 +53,7 @@ footer {
 				fill: $white
 			}
 		}
+
 	}
+
 }
