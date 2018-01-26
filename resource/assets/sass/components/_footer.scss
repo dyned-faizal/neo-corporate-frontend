@@ -1,5 +1,4 @@
 footer {
-<<<<<<< HEAD
 	background-color: $primary;
 	padding: 20px 75px;
 }
@@ -26,15 +25,18 @@ footer {
 			color: $secondary;
 			cursor: pointer;
 		}
+
 	}
+
 }
 
 .socmed__contact {
 	width: 50%;
 	display: flex;
 	justify-content: space-between;
-    align-items: flex-end;
-    flex-direction: column;
+	align-items: flex-end;
+	flex-direction: column;
+	background-color: $primary;
 
 	ul {
 		width: 20%;
@@ -42,17 +44,16 @@ footer {
 		justify-content: space-between;
 
 		li {
-			
 		}
+
 	}
-}
-=======
-    background-color: $primary;
+
 }
 
+
+
 footer span {
-    padding: 10px 5px 0;
-    font-size: 0.7em;
-    font-weight: 300;
+padding: 10px 5px 0;
+font-size: 0.7em;
+font-weight: 300;
 }
->>>>>>> 759f541d8d48deffe3589f29a388d47599372b4f
