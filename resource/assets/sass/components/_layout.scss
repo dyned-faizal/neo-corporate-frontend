@@ -155,7 +155,7 @@ a:hover {
 .main__sidebar {
 	//RESPONSIVE FOR TABLET
 	@include bp (max, 768px) {
-		display: none;
+		display: none !important;
 	}
 
 }

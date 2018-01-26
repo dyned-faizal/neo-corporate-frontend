@@ -392,7 +392,24 @@
                               </ul>
                           </div>
                           <div class="bx-ulvideo">
-                              
+                              <div class="invideo">
+                                <div class="video-wrapper">
+                                    <div class="video-player">
+                                        <div class="video-trigger3" id="video-trigger" style="background-image: url(https://img.youtube.com/vi/ym9AlYGTfE0/maxresdefault.jpg)">
+                                            <a id="play-video" href="#">
+                                                <div class="text">
+                                                    <p class="big"><span class="play"><i class="fa fa-play-circle"></i></span> </p>
+                                                    <!--  <h2>Neo Nexgen</h2> -->
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="video-inner">
+                                            <iframe id="video" class="video3" width="521" height="293" src="https://www.youtube.com/embed/ym9AlYGTfE0?rel=0" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
                           </div>
                       </div>
                 </section>
@@ -418,7 +435,7 @@
 
         //JS FOR TRIGER YOUTUBE
 
-        $(".video-trigger, .video-trigger2").click(function() {
+        $(".video-trigger, .video-trigger2, .video-trigger3").click(function() {
             $(this).addClass("removed");
 
         });
@@ -429,6 +446,8 @@
             $(".video-trigger2").removeClass("removed");
             $(".video2").removeClass("watch");
             $(".video2").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
+            $(".video3").removeClass("watch");
+            $(".video3").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
 
             event.preventDefault();
         });
@@ -439,6 +458,22 @@
             $(".video-trigger").removeClass("removed");
             $(".video").removeClass("watch");
             $(".video").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
+            $(".video3").removeClass("watch");
+            $(".video3").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
+
+            event.preventDefault();
+        });
+
+        $('.video-trigger3').on('click', function(e) {
+            $(".video3").addClass("watch");
+            $(".video3")[0].src += "&autoplay=1";
+            $(".video-trigger").removeClass("removed");
+            $(".video-trigger2").removeClass("removed");
+            $(".video").removeClass("watch");
+            $(".video").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
+            $(".video2").removeClass("watch");
+            $(".video2").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
+            
 
             event.preventDefault();
         });
