@@ -1332,11 +1332,50 @@ header {
       padding: 0 0 40px 0; }
 
 footer {
-  background-color: #3F4E7B; }
+  background-color: #3F4E7B;
+  padding: 20px 75px; }
 
-footer span {
-  padding: 10px 5px 0;
-  font-size: 0.7em;
-  font-weight: 300; }
+.top__footer {
+  color: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 999; }
+
+.address__contact {
+  width: 50%; }
+  .address__contact table tr td {
+    color: #fff; }
+  .address__contact h5 {
+    color: #fff;
+    margin: 20px 0 0 0; }
+    .address__contact h5 a {
+      color: #49C5FE;
+      cursor: pointer; }
+
+.socmed__contact {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .socmed__contact ul {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 /*# sourceMappingURL=app.css.map */

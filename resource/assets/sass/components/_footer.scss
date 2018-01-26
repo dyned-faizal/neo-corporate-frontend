@@ -1,9 +1,47 @@
 footer {
 	background-color: $primary;
+	padding: 20px 75px;
 }
 
-footer span {
-	padding: 10px 5px 0;
-	font-size: 0.7em;
-	font-weight: 300;
+.top__footer {
+	color: $white;
+	width: 100%;
+	display: flex;
+	z-index: 999;
+}
+
+.address__contact {
+	width: 50%;
+
+	table tr td {
+		color: $white;
+	}
+
+	h5 {
+		color: $white;
+		margin: 20px 0 0 0;
+
+		a {
+			color: $secondary;
+			cursor: pointer;
+		}
+	}
+}
+
+.socmed__contact {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+
+	ul {
+		width: 20%;
+		display: flex;
+		justify-content: space-between;
+
+		li {
+			
+		}
+	}
 }
