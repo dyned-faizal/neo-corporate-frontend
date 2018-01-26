@@ -1,5 +1,4 @@
 footer {
-<<<<<<< HEAD
 	background-color: $primary;
 	padding: 20px 75px;
 }
@@ -43,16 +42,13 @@ footer {
 
 		li {
 			
+			svg {
+				transition: 0.2s ease;
+			}
+
+			svg:hover {
+				fill: $white
+			}
 		}
 	}
 }
-=======
-    background-color: $primary;
-}
-
-footer span {
-    padding: 10px 5px 0;
-    font-size: 0.7em;
-    font-weight: 300;
-}
->>>>>>> 759f541d8d48deffe3589f29a388d47599372b4f

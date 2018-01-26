@@ -42,27 +42,9 @@
 //===========================  CONTENT-1 =======================
 
 #content-1 {
-<<<<<<< HEAD
 	// justify-content: flex-start;
 
 	.inner {
-=======
-	justify-content: flex-start;
-
-	.inner {
-		.tittle-h1 {
-			color: #49C5FE;
-			font-size: 1.9em;
-			font-weight: bold;
-			margin: 20px 0 10px;
-		}
-
-		.body-p {
-			color: #000;
-			font-size: 0.9em;
-		}
-
->>>>>>> a03baa4c042ff8ed611574dd5a5cc8ea70e56db2
 		.bxvideo {
 			display: flex;
 			justify-content: flex-start;
@@ -75,10 +57,7 @@
 
 			.invideo {
 				width: 46%;
-<<<<<<< HEAD
 
-=======
->>>>>>> a03baa4c042ff8ed611574dd5a5cc8ea70e56db2
 				//RESPONSIVE FOR TABLET
 				@include bp (max, 768px) {
 					width: 100%;
@@ -86,19 +65,11 @@
 
 				&:nth-child(2) {
 					margin-left: 4%;
-<<<<<<< HEAD
 
 					//RESPONSIVE FOR TABLET
 					@include bp (max, 768px) {
-						margin-left: 0;
+						margin-left:0;
 					}
-
-=======
-					//RESPONSIVE FOR TABLET
-				@include bp (max, 768px) {
-					margin-left:0;
-				}
->>>>>>> a03baa4c042ff8ed611574dd5a5cc8ea70e56db2
 				}
 
 				//colors
@@ -141,11 +112,7 @@
 						background-size: cover;
 						z-index: 10;
 						transition: visibility .33s, opacity .33s;
-<<<<<<< HEAD
 						cursor: pointer !important;
-=======
-						cursor:pointer !important;
->>>>>>> a03baa4c042ff8ed611574dd5a5cc8ea70e56db2
 
 						&.removed {
 							opacity: 0;
@@ -238,7 +205,6 @@
 
 }
 
-<<<<<<< HEAD
 //===========================  CONTENT-2 =======================
 
 #content-2 {
@@ -470,6 +436,3 @@
 		} 
 	}
 }
-=======
-//===========================  CONTENT-2 =======================
->>>>>>> a03baa4c042ff8ed611574dd5a5cc8ea70e56db2
