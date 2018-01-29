@@ -652,6 +652,9 @@ button.weekly_schedule {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    @media screen and (max-width: 425px) {
+      .main__nav .nav__parent {
+        width: 100%; } }
 
 .main__nav.act {
   opacity: 1;
@@ -664,11 +667,15 @@ button.weekly_schedule {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
       transform: translateX(0);
-  text-align: left; }
+  text-align: left;
+  cursor: pointer; }
 
 .main__nav ul {
   display: table-cell;
   vertical-align: middle; }
+  @media screen and (max-width: 425px) {
+    .main__nav ul {
+      margin-left: 20px; } }
 
 .main__nav li {
   padding: 8px 0;
@@ -711,6 +718,9 @@ button.weekly_schedule {
           transform-style: preserve-3d; }
   .searchbox--active {
     color: #000; }
+  @media screen and (max-width: 425px) {
+    .searchbox {
+      width: 98%; } }
   .searchbox:after {
     position: absolute;
     content: "";
@@ -1027,8 +1037,8 @@ a:hover {
           justify-content: center;
   padding-right: 0px;
   /* // &:nth-child(even) {
-										 //    	background-color: #ddd;
-										 //    } */ }
+												 //    	background-color: #ddd;
+												 //    } */ }
 
 .tittle-h1 {
   color: #49C5FE;
@@ -1574,6 +1584,105 @@ a:hover {
           height: 100%;
           text-decoration: none;
           color: white; }
+
+/* //===========================  CONTENT-5 ======================= */
+#content-5 {
+  display: none;
+  min-height: 60vh; }
+  #content-5 .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media screen and (max-width: 425px) {
+      #content-5 .inner {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+    #content-5 .inner h4 {
+      color: #000;
+      margin-bottom: 20px;
+      font-weight: bold; }
+    #content-5 .inner ul {
+      margin: 0 0 15px 40px;
+      list-style-type: none; }
+      @media screen and (max-width: 1024px) {
+        #content-5 .inner ul {
+          margin-left: 25px; } }
+      #content-5 .inner ul li {
+        margin-top: 10px;
+        color: #000; }
+        @media screen and (max-width: 1440px) {
+          #content-5 .inner ul li {
+            font-size: 0.9em; } }
+        #content-5 .inner ul li:hover {
+          color: #49C5FE; }
+      #content-5 .inner ul li:before {
+        /* the custom styled bullets */
+        content: "";
+        margin-right: 10px;
+        margin-left: -24px;
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #000;
+        border-radius: 50%;
+        margin-bottom: 2px; }
+    #content-5 .inner .box-general,
+    #content-5 .inner .box-mobile {
+      width: 30%;
+      border: 1px solid #f2f2f2;
+      padding: 30px; }
+      @media screen and (max-width: 425px) {
+        #content-5 .inner .box-general,
+        #content-5 .inner .box-mobile {
+          width: 100%; } }
+    #content-5 .inner .box-general {
+      margin-right: 40px; }
+      @media screen and (max-width: 425px) {
+        #content-5 .inner .box-general {
+          margin-right: 0px; } }
+
+#content-6 {
+  display: none; }
+  #content-6 .bxcolumn4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: roe;
+            flex-direction: roe;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    #content-6 .bxcolumn4 .column1,
+    #content-6 .bxcolumn4 .column2,
+    #content-6 .bxcolumn4 .column3,
+    #content-6 .bxcolumn4 .column4 {
+      width: 45%;
+      margin-top: 3em; }
+      @media screen and (max-width: 425px) {
+        #content-6 .bxcolumn4 .column1,
+        #content-6 .bxcolumn4 .column2,
+        #content-6 .bxcolumn4 .column3,
+        #content-6 .bxcolumn4 .column4 {
+          width: 99%; } }
+      #content-6 .bxcolumn4 .column1 .tittle-h4,
+      #content-6 .bxcolumn4 .column2 .tittle-h4,
+      #content-6 .bxcolumn4 .column3 .tittle-h4,
+      #content-6 .bxcolumn4 .column4 .tittle-h4 {
+        font-size: 1em;
+        color: #000;
+        margin-bottom: 10px; }
+      #content-6 .bxcolumn4 .column1 p,
+      #content-6 .bxcolumn4 .column2 p,
+      #content-6 .bxcolumn4 .column3 p,
+      #content-6 .bxcolumn4 .column4 p {
+        font-size: 0.9em; }
 
 .main__sidebar {
   background-color: #fff;

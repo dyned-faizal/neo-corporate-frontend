@@ -13,8 +13,8 @@
 	flex-direction: column;
 	justify-content: center;
 	padding-right: 0px;	/* // &:nth-child(even) {
-										 //    	background-color: #ddd;
-										 //    } */
+												 //    	background-color: #ddd;
+												 //    } */
 }
 
 //GENERAL
@@ -456,13 +456,14 @@
 		display: flex;
 		align-items: center;
 
-
 		.bx-ulvideo,
 		.bx-ul {
 			width: 43%;
+
 			@include bp (max, 1024px) {
-			width: 100%;
-		}
+				width: 100%;
+			}
+
 		}
 
 		@include bp (max, 1024px) {
@@ -474,9 +475,10 @@
 			ul {
 				margin: 0 0 15px 40px;
 				list-style-type: none;
+
 				@include bp (max, 1024px) {
-			margin-left: 25px;
-		}
+					margin-left: 25px;
+				}
 
 				li {
 					margin-top: 10px;
@@ -500,8 +502,6 @@
 					background-color: #49C5FE;
 					border-radius: 50%;
 					margin-bottom: 2px;
-
-
 				}
 
 			}
@@ -510,9 +510,10 @@
 
 		.bx-ulvideo {
 			margin-left: 8%;
+
 			@include bp (max, 1024px) {
-			margin-left: 0;
-		}
+				margin-left: 0;
+			}
 
 			.invideo {
 				//RESPONSIVE FOR TABLET
@@ -642,6 +643,125 @@
 
 				}
 
+			}
+
+		}
+
+	}
+
+}
+
+/* //===========================  CONTENT-5 ======================= */
+#content-5 {
+	display: none;
+	min-height: 60vh;
+
+	.inner {
+		display: flex;
+		justify-content: center;
+
+		@include bp (max, 425px) {
+			flex-wrap: wrap;
+		}
+
+		h4 {
+			color: #000;
+			margin-bottom: 20px;
+			font-weight: bold;
+		}
+
+		ul {
+			margin: 0 0 15px 40px;
+			list-style-type: none;
+
+			@include bp (max, 1024px) {
+				margin-left: 25px;
+			}
+
+			li {
+				margin-top: 10px;
+				color: #000;
+
+				@include bp (max, 1440px) {
+					font-size: 0.9em;
+				}
+
+				&:hover {
+					color: #49C5FE;
+				}
+
+			}
+
+			li:before {
+
+				/* the custom styled bullets */
+				content: "";
+				margin-right: 10px;
+				margin-left: -24px;
+				display: inline-block;
+				width: 8px;
+				height: 8px;
+				background-color: #000;
+				border-radius: 50%;
+				margin-bottom: 2px;
+			}
+
+		}
+
+		.box-general,
+		.box-mobile {
+			width: 30%;
+			border: 1px solid #f2f2f2;
+			padding: 30px;
+
+			@include bp (max, 425px) {
+				width: 100%;
+			}
+
+		}
+
+		.box-general {
+			margin-right: 40px;
+
+			@include bp (max, 425px) {
+				margin-right: 0px;
+			}
+
+		}
+
+	}
+
+}
+
+
+
+#content-6 {
+	display: none;
+	.bxcolumn4 {
+		display: flex;
+		flex-direction: roe;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.column1,
+		.column2,
+		.column3,
+		.column4 {
+			width: 45%;
+			margin-top: 3em;
+
+			@include bp (max, 425px) {
+				width: 99%;
+			}
+
+			.tittle-h4 {
+				font-size: 1em;
+				color: #000;
+				margin-bottom: 10px;
+			}
+
+			p {
+				font-size: 0.9em;
 			}
 
 		}

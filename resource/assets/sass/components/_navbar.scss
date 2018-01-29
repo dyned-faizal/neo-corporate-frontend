@@ -48,6 +48,10 @@
 		display: flex;
 		justify-content: flex-start;
 		flex-direction: column;
+
+		@include bp (max, 425px) {
+		width: 100%;
+	}
 	}
 
 }
@@ -64,11 +68,16 @@
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
 	text-align: left;
+	cursor:pointer;
 }
 
 .main__nav ul {
 	display: table-cell;
 	vertical-align: middle;
+
+	@include bp (max, 425px) {
+		margin-left: 20px;
+	}
 }
 
 .main__nav li {
@@ -121,6 +130,10 @@ $btn-width: 44px;
 
 	&--active {
 		color: #000;
+	}
+
+	@include bp (max, 425px) {
+		width: 98%;
 	}
 
 	&:after {
