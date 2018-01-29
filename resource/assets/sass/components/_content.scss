@@ -76,14 +76,8 @@
 
 					//RESPONSIVE FOR TABLET
 					@include bp (max, 768px) {
-						margin-left: 0;
+						margin-left:0;
 					}
-
-					//RESPONSIVE FOR TABLET
-					@include bp (max, 768px) {
-						margin-left: 0;
-					}
-
 				}
 
 				//colors
@@ -219,7 +213,7 @@
 
 }
 
-/* //===========================  CONTENT-2 ======================= */
+//===========================  CONTENT-2 =======================
 #content-2 {
 	.inner {
 		display: flex;
@@ -463,7 +457,10 @@
 			@include bp (max, 1024px) {
 				width: 100%;
 			}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6c875381f68cd8ce53411d608478de8fec6494e9
 		}
 
 		@include bp (max, 1024px) {
@@ -650,6 +647,7 @@
 	}
 
 }
+<<<<<<< HEAD
 
 /* //===========================  CONTENT-5 ======================= */
 #content-5 {
@@ -769,3 +767,5 @@
 	}
 
 }
+=======
+>>>>>>> 6c875381f68cd8ce53411d608478de8fec6494e9

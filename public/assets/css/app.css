@@ -624,7 +624,7 @@ button.weekly_schedule {
 
 /* MODAL MENU */
 .main__nav {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: white;
   position: absolute;
   left: 0;
   top: 0;
@@ -696,7 +696,9 @@ button.weekly_schedule {
 .main__nav a {
   color: #8b8b8b;
   display: inline-block;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease; }
   .main__nav a:hover {
     color: #49C5FE; }
 
@@ -1091,9 +1093,6 @@ a:hover {
         @media screen and (max-width: 768px) {
           #content-1 .inner .bxvideo .invideo:nth-child(2) {
             margin-left: 0; } }
-        @media screen and (max-width: 768px) {
-          #content-1 .inner .bxvideo .invideo:nth-child(2) {
-            margin-left: 0; } }
       #content-1 .inner .bxvideo .invideo .video-wrapper {
         margin: 5% auto;
         position: relative; }
@@ -1198,7 +1197,6 @@ a:hover {
         #content-1 .inner .bxvideo .invideo .videotitle .sub-tittle {
           font-size: 0.8em; }
 
-/* //===========================  CONTENT-2 ======================= */
 #content-2 .inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1900,10 +1898,10 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-
-footer span {
-  padding: 10px 5px 0;
-  font-size: 0.7em;
-  font-weight: 300; }
+    .socmed__contact ul li svg {
+      -webkit-transition: 0.2s ease;
+      transition: 0.2s ease; }
+    .socmed__contact ul li svg:hover {
+      fill: #fff; }
 
 /*# sourceMappingURL=app.css.map */

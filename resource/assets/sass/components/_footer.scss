@@ -44,16 +44,16 @@ footer {
 		justify-content: space-between;
 
 		li {
+			
+			svg {
+				transition: 0.2s ease;
+			}
+
+			svg:hover {
+				fill: $white
+			}
 		}
 
 	}
 
-}
-
-
-
-footer span {
-padding: 10px 5px 0;
-font-size: 0.7em;
-font-weight: 300;
 }
