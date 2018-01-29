@@ -13,8 +13,8 @@
 	flex-direction: column;
 	justify-content: center;
 	padding-right: 0px;	/* // &:nth-child(even) {
-												 //    	background-color: #ddd;
-												 //    } */
+																	 //    	background-color: #ddd;
+																	 //    } */
 }
 
 //GENERAL
@@ -76,8 +76,9 @@
 
 					//RESPONSIVE FOR TABLET
 					@include bp (max, 768px) {
-						margin-left:0;
+						margin-left: 0;
 					}
+
 				}
 
 				//colors
@@ -645,15 +646,53 @@
 
 }
 
-
 /* //===========================  CONTENT-5 ======================= */
+#content-5,
+#content-6,
+#content-7 {
+	.backmenu {
+		display: flex;
+		height: 40px;
+		align-items: center;
+		align-self: center;
+
+		.fa-arrow-left {
+			font-size: 1.3em;
+			margin-right: 7px;
+		}
+
+		i {
+			color: #49C5FE;
+		}
+
+	}
+
+	h1 {
+		color: #49C5FE;
+		font-size: 2.2em;
+		font-weight: bold;
+		margin-bottom: 30px;
+		margin-top: 30px;
+		text-align: center;
+	}
+
+}
+
 #content-5 {
-	display: none;
+	display: flex;
+	align-items: center;
 	min-height: 60vh;
+	margin-top: 90px;
 
 	.inner {
 		display: flex;
-		justify-content: center;
+		margin-left: 3.5em;
+		border: 1px solid #f2f2f2;
+
+		//RESPONSIVE FOR TABLET
+		@include bp (max, 768px) {
+			margin-left: 0;
+		}
 
 		@include bp (max, 425px) {
 			flex-wrap: wrap;
@@ -705,8 +744,7 @@
 
 		.box-general,
 		.box-mobile {
-			width: 30%;
-			border: 1px solid #f2f2f2;
+			width: 50%;
 			padding: 30px;
 
 			@include bp (max, 425px) {
@@ -728,10 +766,10 @@
 
 }
 
-
-
 #content-6 {
-	display: none;
+	min-height: 70vh;
+	margin-top: 90px;
+
 	.bxcolumn4 {
 		display: flex;
 		flex-direction: roe;
@@ -765,3 +803,93 @@
 
 }
 
+#content-7 {
+	min-height: 60vh;
+	margin-top: 90px;
+
+	.inner {
+		margin: 0 3em 0 5em;
+
+		//RESPONSIVE FOR TABLET
+		@include bp (max, 768px) {
+			margin: 0;
+		}
+
+		h4 {
+			color: #000;
+			font-size: 1.1em;
+			margin: 0 0 10px 60px;
+
+			//RESPONSIVE FOR TABLET
+			@include bp (max, 768px) {
+				margin: 0;
+			}
+
+		}
+
+		.bxdiscussions {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			padding: 10px;
+
+			.boxpic {
+				display: flex;
+				align-items: center;
+				padding: 10px;
+				margin: 0 0 20px 50px;
+				cursor: pointer;
+
+				//RESPONSIVE FOR TABLET
+				@include bp (max, 768px) {
+					margin-left: 10px;
+				}
+
+				img {
+					width: 100%;
+				}
+
+				.pic {
+					width: 50px;
+					height: 50px;
+					border-radius: 100%;
+					overflow: hidden;
+					margin-right: 10px;
+				}
+
+				.bxattc {
+					border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+
+					.comment-1 {
+						color: #000;
+					}
+
+					.time-1 {
+						font-size: 0.7em;
+					}
+
+					.icon-1 {
+						display: flex;
+						align-items: center;
+						margin: 10px 0 10px;
+
+						.fa-comments-o {
+							font-size: 1.4em;
+						}
+
+						span {
+							font-size: 0.8em;
+							margin-left: 8px;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
