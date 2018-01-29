@@ -1826,28 +1826,22 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
     height: 100%; }
-
-.main__sidebar ul li {
-  width: 100%;
-  padding: 5px;
-  font-size: 1em;
-  font-weight: 300;
-  cursor: pointer;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: left; }
-  .main__sidebar ul li svg {
-    position: relative;
-    right: 20px; }
-  .main__sidebar ul li span {
-    margin-top: -5px;
-    margin-left: -10px; }
+    .main__sidebar ul li {
+      width: 100%;
+      padding: 5px;
+      font-size: 1em;
+      font-weight: 300;
+      cursor: pointer;
+      -webkit-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: left;
+      overflow: hidden; }
 
 #sidebar a {
   -webkit-transition: color 0.2s ease;
@@ -1857,15 +1851,29 @@ a:hover {
   display: block;
   font-size: 1em;
   font-weight: bold;
-  letter-spacing: 0.25em;
   line-height: 1.75;
   outline: 0;
   padding: .35em 0;
   position: relative;
   text-decoration: none; }
+  #sidebar a:hover {
+    color: #49C5FE; }
+  #sidebar a:after {
+    content: "";
+    display: inline-block;
+    height: 0.75em;
+    vertical-align: bottom;
+    width: 0;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 1px solid #49C5FE;
+    -webkit-transition: width 0.6s;
+    transition: width 0.6s; }
 
 #sidebar a.active {
   color: #49C5FE; }
+  #sidebar a.active:after {
+    width: 100%; }
 
 header {
   width: 100%;
@@ -1954,8 +1962,25 @@ header {
       @media screen and (max-width: 768px) {
         .landing__page .landingpage__background img {
           width: 100%; } }
-    .landing__page .landingpage__background div {
-      padding: 0 0 40px 0; }
+    .landing__page .landingpage__background .animated__svg {
+      padding: 0 0 40px 0;
+      position: relative; }
+      .landing__page .landingpage__background .animated__svg .animated__neo {
+        width: 80%;
+        position: absolute;
+        margin: auto;
+        top: 20%;
+        left: 0;
+        right: 0;
+        bottom: 0; }
+        .landing__page .landingpage__background .animated__svg .animated__neo .animated__fill {
+          width: 100%;
+          position: absolute;
+          margin: auto;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0; }
 
 footer {
   background-color: #3F4E7B;
