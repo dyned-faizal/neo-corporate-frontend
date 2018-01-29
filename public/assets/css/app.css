@@ -1877,6 +1877,7 @@ header {
           bottom: 0; }
 
 footer {
+  position: relative;
   background-color: #3F4E7B;
   padding: 20px 75px; }
 
@@ -1923,10 +1924,12 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .socmed__contact ul li svg {
+    .socmed__contact ul li i {
+      font-size: 1.5em;
+      cursor: pointer;
       -webkit-transition: 0.2s ease;
       transition: 0.2s ease; }
-    .socmed__contact ul li svg:hover {
-      fill: #fff; }
+    .socmed__contact ul li i:hover {
+      color: #fff; }
 
 /*# sourceMappingURL=app.css.map */
