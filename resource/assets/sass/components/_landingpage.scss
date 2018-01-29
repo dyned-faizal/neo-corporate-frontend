@@ -34,8 +34,29 @@
 			}
 	    }
 
-	    div {
+	    .animated__svg {
 	    	padding: 0 0 40px 0;
+	    	position: relative;
+
+	    	.animated__neo {
+	    		width: 80%;
+	    		position: absolute;
+	    		margin: auto;
+	    		top: 20%;
+	    		left: 0;
+	    		right: 0;
+	    		bottom: 0;
+
+	    		.animated__fill {
+	    			width: 100%;
+	    			position: absolute;
+		    		margin: auto;
+		    		top: 0;
+		    		left: 0;
+		    		right: 0;
+		    		bottom: 0;
+	    		}
+	    	}
 	    }
 	}
 
