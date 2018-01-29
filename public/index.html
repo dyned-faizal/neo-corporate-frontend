@@ -413,84 +413,6 @@
                           </div>
                       </div>
                 </section>
-                <section id="content-5" class="each__content">
-                     <div class="inner">
-                         <div class="box-general">
-                            <h4>General Information</h4> 
-                            <ul>
-                                <a href="#"><li>Client Requiremnts</li></a>
-                                <a href="#"><li>Server Requiremnts</li></a>
-                                <a href="#"><li>Mobile Requiremnts</li></a> 
-                                <br>
-                                <a href="#"><li>Documentation</li></a>
-                                <a href="#"><li>Traning Videos</li></a>
-                                <br>
-                                <a href="#"><li>Download and insstall DynEd (Courseare)</li></a>
-                                <a href="#"><li>Attention OSX Mavericks users</li></a>
-                            </ul>
-                         </div>
-                         <div class="box-mobile">
-                             <h4>Mobile Tips adn Trobleshooting</h4> 
-                             <ul>
-                                 <a href="#"><li>Tested and Approved Tablets</li></a>
-                                 <a href="#"><li>iOS Tips - Pro</li></a>
-                                 <a href="#"><li>iOS Tips - Plus & Productivity</li></a>
-                                 <a href="#"><li>Android Tips - Pro</li></a>
-                                 <a href="#"><li>Android Tips - Plus & Productivity</li></a>
-                                 <a href="#"><li>Chromebook Tips - Pro</li></a>
-                             </ul>
-                         </div>
-                     </div>
-                </section>
-                 <section id="content-6" class="each__content">
-                    
-                    <p class="body-p">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                         Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                    </p>
-                    <div class="bxcolumn4">
-                        <div class="column1">
-                            <h4 class="tittle-h4">Simply dummy</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                            </p>
-                        </div>
-                        <div class="column2">
-                            <h4 class="tittle-h4">Simply dummy</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                            </p>
-                        </div>
-                        <div class="column3">
-                            <h4 class="tittle-h4">Simply dummy</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                            </p>
-                        </div>
-                        <div class="column4">
-                            <h4 class="tittle-h4">Simply dummy</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                            </p>
-                        </div>
-                    </div>
-                </section>
             </div>
 
         </main>
@@ -540,51 +462,7 @@
 
 
 
-        //JS FOR TRIGER YOUTUBE
-
-        $(".video-trigger, .video-trigger2, .video-trigger3").click(function() {
-            $(this).addClass("removed");
-
-        });
-
-        $('.video-trigger').on('click', function(e) {
-            $(".video").addClass("watch");
-            $(".video")[0].src += "&autoplay=1";
-            $(".video-trigger2").removeClass("removed");
-            $(".video2").removeClass("watch");
-            $(".video2").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
-            $(".video3").removeClass("watch");
-            $(".video3").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
-
-            event.preventDefault();
-        });
-
-        $('.video-trigger2').on('click', function(e) {
-            $(".video2").addClass("watch");
-            $(".video2")[0].src += "&autoplay=1";
-            $(".video-trigger").removeClass("removed");
-            $(".video").removeClass("watch");
-            $(".video").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
-            $(".video3").removeClass("watch");
-            $(".video3").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
-
-            event.preventDefault();
-        });
-
-        $('.video-trigger3').on('click', function(e) {
-            $(".video3").addClass("watch");
-            $(".video3")[0].src += "&autoplay=1";
-            $(".video-trigger").removeClass("removed");
-            $(".video-trigger2").removeClass("removed");
-            $(".video").removeClass("watch");
-            $(".video").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
-            $(".video2").removeClass("watch");
-            $(".video2").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
-            
-
-            event.preventDefault();
-        });
-
+       
 
         // click next from welcome page
         $('#nextToContent').click(function() {
