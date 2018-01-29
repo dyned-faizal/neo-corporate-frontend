@@ -201,3 +201,48 @@
     }
 
 })(jQuery);
+
+ //JS FOR TRIGER YOUTUBE
+
+    $(".video-trigger, .video-trigger2, .video-trigger3").click(function() {
+        $(this).addClass("removed");
+
+    });
+
+    $('.video-trigger').on('click', function(e) {
+        $(".video").addClass("watch");
+        $(".video")[0].src += "&autoplay=1";
+        $(".video-trigger2").removeClass("removed");
+        $(".video2").removeClass("watch");
+        $(".video2").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
+        $(".video3").removeClass("watch");
+        $(".video3").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
+
+        event.preventDefault();
+    });
+
+    $('.video-trigger2').on('click', function(e) {
+        $(".video2").addClass("watch");
+        $(".video2")[0].src += "&autoplay=1";
+        $(".video-trigger").removeClass("removed");
+        $(".video").removeClass("watch");
+        $(".video").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
+        $(".video3").removeClass("watch");
+        $(".video3").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
+
+        event.preventDefault();
+    });
+
+    $('.video-trigger3').on('click', function(e) {
+        $(".video3").addClass("watch");
+        $(".video3")[0].src += "&autoplay=1";
+        $(".video-trigger").removeClass("removed");
+        $(".video-trigger2").removeClass("removed");
+        $(".video").removeClass("watch");
+        $(".video").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
+        $(".video2").removeClass("watch");
+        $(".video2").attr('src', 'https://www.youtube.com/embed/ym9AlYGTfE0?rel=0');
+        
+
+        event.preventDefault();
+    });
